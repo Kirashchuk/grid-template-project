@@ -202,16 +202,51 @@ a {
   border: 0;
 }
 
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 350px;
+  height: 60px;
+  padding: 0.5em 1em;
+
+  letter-spacing: 0.1em;
+
+  border: 2px solid #2d3651;
+  background-color: rgba(45, 54, 81, 0.8);
+
+  font-size: 1.125rem;
+}
+.btn--primary {
+  background-color: rgba(45, 54, 81, 0.8);
+}
+
 .skills {
   padding: 10px;
 }
 .skills__container {
   display: grid;
 
+  margin-bottom: 20px;
+
   gap: 10px;
-  grid-auto-rows: calc(33.33333vh - 13.3333px);
-  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
-  grid-template-columns: repeat(4, 1fr);
+}
+.skills__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
 }
 
 .skill-item {
@@ -228,8 +263,6 @@ a {
   margin: 0;
 
   letter-spacing: 0.1em;
-
-  font-size: 1.25rem;
 }
 .skill-item__link {
   display: -webkit-box;
@@ -301,4 +334,56 @@ a {
 
 .skill-item:nth-of-type(9) {
   grid-area: a9;
+}
+
+@media (min-height: 691px) {
+  .skills__container {
+    grid-auto-rows: calc(33.33333vh - 13.3333333333px);
+  }
+}
+
+@media (min-width: 768px) {
+  .skill-item__title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills__container {
+    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .skills__container {
+    grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767.8px) {
+  .skill-item__title {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .skills__container {
+    grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-height: 690px) {
+  .skills__container {
+    grid-auto-rows: calc(230px - 13.3333333333px);
+  }
+}
+
+@media (max-width: 575.8px) {
+  .skills__container {
+    grid-template-areas: "a1" "a2" "a4" "a5" "a6" "a7" "a8" "a9";
+    grid-template-columns: 1fr;
+  }
 }
