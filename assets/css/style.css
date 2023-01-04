@@ -225,6 +225,35 @@ a {
 .btn--primary {
   height: 60px;
 }
+
+.header {
+  position: relative;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  min-height: 100vh;
+
+  background-color: #2d3651;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+}
+
+.header-content {
+  width: 100%;
+
+  background-color: red;
+}
+.header-content__title {
+  margin: 0;
+}
 .skills__container {
   display: grid;
 

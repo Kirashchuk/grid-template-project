@@ -1,0 +1,11 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-content {
+  background-color: red;
+  width: 100%;
+
+  &__title {
+    margin: 0;
+  }
+}
