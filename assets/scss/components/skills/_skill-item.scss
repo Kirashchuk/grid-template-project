@@ -1,5 +1,5 @@
-@use "../../../presets" as *;
-@use "../../../mixins" as *;
+@use "../../presets" as *;
+@use "../../mixins" as *;
 
 .skill-item {
   position: relative;
@@ -10,14 +10,12 @@
 
     letter-spacing: 0.1em;
 
-    @media (min-width: $md){
+    @include md-min {
       font-size: 1.25rem;
     }
-
-    @media (max-width: calc($md - 0.2px)){
+    @include md {
       font-size: 1.125rem;
     }
-
     @include abs-position();
   }
 
