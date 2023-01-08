@@ -3,9 +3,12 @@
 
 .header {
   position: relative;
-  display: flex;
-  align-items: center;
+  background-position: 50% 50%;
+  background-size: cover;
   background-color: $color-primary;
   min-height: 100vh;
+
+  display: grid;
+  align-content: center;
 }
 
