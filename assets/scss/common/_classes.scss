@@ -12,10 +12,9 @@
 
   padding: 0.5em 1em;
 
-  font-size: 1.125rem;
   letter-spacing: 0.1em;
   transition: background-color 0.25s;
-  
+
   &:hover,
   &:focus {
       background-color: $color-accent;
@@ -25,11 +24,25 @@
     background-color: rgba($color-light, 0.1);
     border: 2px solid $color-light;
 
-    width: 250px;
-    height: 60px;
+    @include lg-min {
+      font-size: 1.125rem;
+      width: 250px;
+      height: 60px;
+    }
+
+    @include lg-md {
+      width: 200px;
+      height: 50px;
+    }
+
+    @include md {
+      width: 170px;
+      height: 40px;
+    }
   }
 
   &--primary {
+    font-size: 1.125rem;
     background-color: rgba($color-primary, 0.8);
     height: 60px;
     border: 2px solid $color-primary;
