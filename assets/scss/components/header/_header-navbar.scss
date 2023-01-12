@@ -8,7 +8,7 @@
     position: relative;
     margin: 25px 0 25px auto;
     transform: rotate(0deg);
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 
     @include md-min {
@@ -16,7 +16,6 @@
     }
 
     @include md {
-
     }
 
     &-row {
@@ -27,7 +26,7 @@
       background: $color-light;
       opacity: 1;
       transform: rotate(0deg);
-      transition: .25s ease-in-out;
+      transition: 0.25s ease-in-out;
 
       &:nth-child(even) {
         left: 50%;
@@ -104,26 +103,43 @@
       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
       gap: 0;
       justify-content: end;
+      @include unlist;
     }
 
     @include md {
-      display: none
-    }
+      display: none;
 
-    @include unlist;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      text-align: right;
+      background-color: rgba($color-gray-dark, 0.8);
+      @include box-shadow;
+      @include unlist;
+    }
   }
 
   &__item {
-
+    @include md {
+      margin: $gap $gap-sm;
+    }
   }
 
   &__link {
+    padding: 18px;
     font-size: 18px;
     letter-spacing: 2px;
-    padding: 18px;
+
     transition: color 0.25s;
     font-weight: 400;
 
+    @include md-min {
+      padding: 18px;
+    }
+
+    @include md {
+      padding: 10px;
+    }
 
     &:hover,
     &:focus {
