@@ -201,11 +201,10 @@ template {
 .header-menu__container {
   width: min(100% - 40px, 1340px);
 
-  -webkit-margin-start: auto;
-  -moz-margin-start: auto;
   -webkit-margin-end: auto;
   -moz-margin-end: auto;
-
+  -webkit-margin-start: auto;
+  -moz-margin-start: auto;
 }
 
 *,

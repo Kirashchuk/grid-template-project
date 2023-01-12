@@ -4,6 +4,8 @@
 
 %container {
   width: min(100% - $gap * 2, $container);
-  margin-inline: auto;
+  -webkit-margin-start: auto;
+  -moz-margin-start: auto;
+  -webkit-margin-end: auto;
+  -moz-margin-end: auto;
 }
-
