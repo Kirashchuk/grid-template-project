@@ -71,3 +71,7 @@ a {
   text-decoration: none;
   color: $color-light;
 }
+
+input:focus {
+  outline: none;
+}
