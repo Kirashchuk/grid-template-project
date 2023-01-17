@@ -2,7 +2,7 @@
 @use "../mixins" as *;
 
 .visually-hidden {
-@include visually-hidden
+  @include visually-hidden;
 }
 
 .btn {
@@ -17,8 +17,8 @@
 
   &:hover,
   &:focus {
-      background-color: $color-accent;
-    }
+    background-color: $color-accent;
+  }
 
   &--light {
     background-color: rgba($color-light, 0.1);
@@ -46,6 +46,7 @@
     background-color: rgba($color-primary, 0.8);
     height: 60px;
     border: 2px solid $color-primary;
+    color: $color-light;
 
     @include sm-min {
       width: 350px;

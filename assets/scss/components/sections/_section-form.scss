@@ -6,7 +6,6 @@
   padding: $gap-lg 0;
 
   &__container {
-    background-color: red;
     display: grid;
     gap: $gap;
 
@@ -19,5 +18,13 @@
     @include md-sm {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  .btn--primary {
+    width: 100%;
+
+    border-color: rgba($color-light, 0);
+    border-bottom-color: rgba($color-light, 0.2);
+    background-color: rgba($color-light, 0.1);
   }
 }
