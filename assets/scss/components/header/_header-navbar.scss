@@ -103,7 +103,10 @@
       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
       gap: 0;
       justify-content: end;
+
       @include unlist;
+
+      margin: 0 -20px 0 0;
     }
 
     @include md {
@@ -126,7 +129,6 @@
   }
 
   &__link {
-    padding: 18px;
     font-size: 18px;
     letter-spacing: 2px;
 

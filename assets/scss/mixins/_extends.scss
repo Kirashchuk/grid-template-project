@@ -3,11 +3,10 @@
 @use "mixins-media" as *;
 
 %container {
-  width: min(100% - $gap * 2, $container);
-  -webkit-margin-end: auto;
-  -moz-margin-end: auto;
-  -webkit-margin-start: auto;
-  -moz-margin-start: auto;
+  max-width: 1340px;
+  margin: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 %section {

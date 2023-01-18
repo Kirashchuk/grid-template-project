@@ -165,17 +165,17 @@ template {
 [hidden] {
   display: none;
 }
+.posts__container,
 .form__container,
 .about__container,
 .header-content__container,
 .header-menu__container {
-  width: min(100% - 40px, 1340px);
-
-  -webkit-margin-end: auto;
-     -moz-margin-end: auto;
-  -webkit-margin-start: auto;
-     -moz-margin-start: auto;
+  max-width: 1340px;
+  margin: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
+.posts h2,
 .about h2 {
   margin-top: 0;
 }
@@ -326,8 +326,7 @@ input:focus {
 .header-logo__link {
   display: block;
 
-  margin-left: 2px;
-  padding: 0;
+  margin-left: -20px;
   padding: 20px 0 20px 20px;
 
   letter-spacing: 5.2px;
@@ -439,8 +438,6 @@ input:focus {
   left: calc(50% - 2.5px);
 }
 .header-navbar__link {
-  padding: 18px;
-
   -webkit-transition: color 0.25s;
        -o-transition: color 0.25s;
           transition: color 0.25s;
@@ -609,8 +606,6 @@ input:focus {
 }
 .about__content:first-of-type {
   position: relative;
-
-  margin-top: -5px;
 }
 .about__content::after {
   position: absolute;
@@ -723,6 +718,22 @@ input:focus {
 .form-item__input:focus::placeholder {
   color: white;
 }
+
+.posts__grid {
+  display: grid;
+
+  padding-bottom: 20px;
+
+  gap: 20px;
+}
+.posts__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 @media (min-width: 576px) {
   .btn--primary {
     width: 350px;
@@ -734,6 +745,9 @@ input:focus {
     gap: 10px;
   }
   .skills__actions {
+    margin-bottom: 30px;
+  }
+  .posts__actions {
     margin-bottom: 30px;
   }
 }
@@ -753,6 +767,7 @@ input:focus {
     justify-content: end;
 
     margin: 0;
+    margin: 0 -20px 0 0;
     padding: 0;
 
     list-style: none;
@@ -772,6 +787,7 @@ input:focus {
   }
 }
 @media (min-width: 992px) {
+  .posts,
   .about {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -806,6 +822,7 @@ input:focus {
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
+  .posts,
   .about {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -835,6 +852,7 @@ input:focus {
   }
 }
 @media (max-width: 767.8px) {
+  .posts,
   .about {
     padding-top: 60px;
     padding-bottom: 60px;

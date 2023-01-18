@@ -1,2 +1,26 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.posts {
+  @extend %section;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__grid {
+    display: grid;
+    padding-bottom: $gap;
+    gap: $gap;
+
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    @include sm-min {
+      margin-bottom: $gap-lg;
+    }
+  }
+}
