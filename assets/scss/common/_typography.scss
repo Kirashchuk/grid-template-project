@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  letter-spacing: 0.08em;
+  letter-spacing: 0.078em;
   color: $color-light;
   font-weight: 300;
   font-family: $font-header;
@@ -66,6 +66,7 @@ h2 {
 h3 {
   font-family: $font-header;
   color: $color-gray;
+  font-size: 1.125rem;
 }
 
 p {

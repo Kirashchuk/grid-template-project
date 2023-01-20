@@ -38,40 +38,41 @@
       @include lg-min {
         font-size: 1.125rem;
       }
-    }
 
-    &:first-of-type {
-      position: relative;
-    }
+      &:first-of-type {
+        position: relative;
+        margin-top: -5px;
 
-    &::after {
-      position: absolute;
-      top: 100px;
-      width: 2px;
-      height: 200px;
-      content: "";
+        &::after {
+          position: absolute;
+          top: 0;
+          width: 2px;
+          height: 200px;
+          content: "";
 
-      background-color: rgba($color-gray, 0.1);
+          background-color: rgba($color-gray, 0.1);
 
-      @include lg-min {
-        right: -$gap * 2.5;
+          @include lg-min {
+            right: -$gap * 2.5;
+          }
+
+          @include lg-md {
+            right: -$gap;
+          }
+
+          @include md-sm {
+            right: -$gap-sm;
+          }
+
+          @include sm {
+            display: none;
+          }
+        }
       }
 
-      @include lg-md {
-        right: -$gap;
+      &:last-of-type {
+        margin: 0;
       }
-
-      @include md-sm {
-        right: -$gap-sm;
-      }
-
-      @include sm {
-        display: none;
-      }
-    }
-
-    &:last-of-type {
-      margin: 0;
     }
   }
 

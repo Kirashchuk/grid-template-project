@@ -106,7 +106,7 @@
 
       @include unlist;
 
-      margin: 0 -20px 0 0;
+      margin: 0 -21px 0 0;
     }
 
     @include md {
@@ -129,8 +129,8 @@
   }
 
   &__link {
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 1.125rem;
+    letter-spacing: 0.132rem;
 
     transition: color 0.25s;
     font-weight: 400;

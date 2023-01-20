@@ -31,11 +31,9 @@
   }
 
   &__actions {
-    display: flex;
-    justify-content: center;
-
     @include sm-min {
-      margin-bottom: $gap-lg;
+      display: flex;
+      justify-content: center;
     }
   }
 }
