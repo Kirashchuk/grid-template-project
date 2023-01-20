@@ -10,7 +10,11 @@
   }
 
   &__title {
-    margin: 0 0 52px;
+    margin: 0 0 53px;
+
+    @include md {
+      margin: 0 0 33px;
+    }
   }
 
   &__actions {

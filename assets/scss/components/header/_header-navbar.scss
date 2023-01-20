@@ -101,12 +101,12 @@
     @include md-min {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-      gap: 0;
       justify-content: end;
+      gap: 20px;
 
       @include unlist;
 
-      margin: 0 -21px 0 0;
+      margin: 0 -10px 0 0;
     }
 
     @include md {
@@ -130,13 +130,13 @@
 
   &__link {
     font-size: 1.125rem;
-    letter-spacing: 0.132rem;
+    letter-spacing: 0.1em;
 
     transition: color 0.25s;
     font-weight: 400;
 
     @include md-min {
-      padding: 18px;
+      padding: $gap $gap-sm;
     }
 
     @include md {
